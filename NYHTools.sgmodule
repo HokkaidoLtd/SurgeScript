@@ -1,0 +1,8 @@
+#!name=NYHTools
+#!desc=NYHToolsUnlock
+
+[Script]
+NYHTools.js = type=http-request,pattern=^http:\/\/newyh\.deblock\.top\/.*$,script-path=NYHTools.js,requires-body=1,max-size=0,debug=1
+
+[MITM]
+hostname = %APPEND% newyh.deblock.top
